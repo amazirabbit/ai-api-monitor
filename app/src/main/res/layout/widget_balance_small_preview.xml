@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:padding="8dp" android:background="#FF1E2329" android:gravity="center_vertical">
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总余额" android:textColor="#FF707A8A" android:textSize="10sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="¥1,234.56" android:textColor="#FF0ECB81" android:textSize="22sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="5分钟前" android:textColor="#FF707A8A" android:textSize="9sp" />
+    </LinearLayout>
+    <View android:layout_width="10dp" android:layout_height="10dp" android:background="#FF0ECB81" />
+</LinearLayout>

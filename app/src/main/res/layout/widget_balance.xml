@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="12dp" android:background="#FF1E2329">
+    <TextView android:id="@+id/widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI 余额监控" android:textColor="#FFFCD535" android:textSize="13sp" android:textStyle="bold" />
+    <TextView android:id="@+id/widget_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="¥0.00" android:textColor="#FF0ECB81" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:id="@+id/widget_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="等待刷新..." android:textColor="#FF707A8A" android:textSize="11sp" />
+</LinearLayout>
