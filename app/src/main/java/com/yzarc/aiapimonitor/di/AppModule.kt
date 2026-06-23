@@ -14,7 +14,22 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
-    @Provides @Singleton fun provideDatabase(@ApplicationContext context: Context): AppDatabase = AppDatabase.getInstance(context)
-    @Provides @Singleton fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences = context.getSharedPreferences("app_settings", Context.MODE_PRIVATE)
-    @Provides @Singleton fun provideBalanceRepository(db: AppDatabase, prefs: SharedPreferences): BalanceRepository = BalanceRepository(db, prefs)
+
+    @Provides
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): AppDatabase {
+        return AppDatabase.getInstance(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences {
+        return context.getSharedPreferences("app_settings", Context.MODE_PRIVATE)
+    }
+
+    @Provides
+    @Singleton
+    fun provideBalanceRepository(db: AppDatabase, prefs: SharedPreferences): BalanceRepository {
+        return BalanceRepository(db, prefs)
+    }
 }
