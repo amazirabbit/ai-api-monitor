@@ -27,7 +27,9 @@ class App : Application() {
 
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel("balance_alert", "余额提醒", NotificationManager.IMPORTANCE_HIGH).apply { description = "AI API 余额不足提醒" }
+            val channel = NotificationChannel(
+                "balance_alert", "余额提醒", NotificationManager.IMPORTANCE_HIGH
+            ).apply { description = "AI API 余额不足提醒" }
             val nm = getSystemService(NotificationManager::class.java)
             nm.createNotificationChannel(channel)
         }
